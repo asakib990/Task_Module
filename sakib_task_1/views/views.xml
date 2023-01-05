@@ -1,0 +1,82 @@
+<odoo>
+    <data>
+
+<!--        Tree View-->
+        <record id="tree_view_1" model="ir.ui.view">
+            <field name="name">question.information</field>
+            <field name="model">question.info</field>
+            <field name="arch" type="xml">
+                <tree string="Questions and Answer">
+                    <field name="que_id"/>
+                    <field name="que"/>
+                    <field name="ans"/>
+                    <field name="marks"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="tree_view_2" model="ir.ui.view">
+            <field name="name">student.information</field>
+            <field name="model">student.info</field>
+            <field name="arch" type="xml">
+                <tree string="Tree View For Student Info">
+                    <field name="s_id"/>
+                    <field name="name"/>
+                    <field name="score"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--        Form View-->
+        <record id="tree_view_1" model="ir.ui.view">
+            <field name="name">question.information</field>
+            <field name="model">question.info</field>
+            <field name="arch" type="xml">
+                <form string="Questions and Answer">
+
+                    <field name="que_id"/>
+                    <field name="que"/>
+
+
+                    <field name="ans"/>
+                    <field name="marks"/>
+
+
+                </form>
+            </field>
+        </record>
+
+        <record id="tree_view_2" model="ir.ui.view">
+            <field name="name">student.information</field>
+            <field name="model">student.info</field>
+            <field name="arch" type="xml">
+                <form string="Tree View For Student Info">
+
+                    <field name="s_id"/>
+                    <field name="name"/>
+                    <field name="score"/>
+                    <field name="que_id"/>
+
+                </form>
+            </field>
+        </record>
+
+        <!--        Action View-->
+        <record id="action_view_1" model="ir.actions.act_window">
+            <field name="name">Questions and Answer Database</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">question.info</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="tree_view_1"/>
+        </record>
+
+        <record id="action_view_2" model="ir.actions.act_window">
+            <field name="name">Student Information Database</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">student.info</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="tree_view_2"/>
+        </record>
+
+    </data>
+</odoo>

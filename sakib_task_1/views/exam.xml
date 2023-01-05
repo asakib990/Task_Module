@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+<!--        tree view-->
+        <record id="tree_view_1" model="ir.ui.view">
+            <field name="name">question.information</field>
+            <field name="model">question.info</field>
+            <field name="arch" type="xml">
+                <tree string="Questions and Answer">
+                    <field name="que_id"/>
+                    <field name="que"/>
+                    <field name="ans"/>
+                    <field name="marks"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--        Form View-->
+        <record id="tree_view_1" model="ir.ui.view">
+            <field name="name">question.information</field>
+            <field name="model">question.info</field>
+            <field name="arch" type="xml">
+                <form string="Questions and Answer">
+                    <field name="que_id"/>
+                    <field name="que"/>
+                    <field name="ans"/>
+                    <field name="marks"/>
+                </form>
+            </field>
+        </record>
+
+        <!--        Action View-->
+        <record id="action_view_1" model="ir.actions.act_window">
+            <field name="name">Questions and Answer Database</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">question.info</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="tree_view_1"/>
+        </record>
+    </data>
+</odoo>
