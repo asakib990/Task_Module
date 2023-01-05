@@ -1,7 +1,7 @@
 <odoo>
     <data>
 <!--        tree view-->
-        <record id="tree_view_1" model="ir.ui.view">
+        <record id="tree_view_2" model="ir.ui.view">
             <field name="name">question.information</field>
             <field name="model">question.info</field>
             <field name="arch" type="xml">
@@ -15,7 +15,7 @@
         </record>
 
         <!--        Form View-->
-        <record id="tree_view_1" model="ir.ui.view">
+        <record id="form_view_2" model="ir.ui.view">
             <field name="name">question.information</field>
             <field name="model">question.info</field>
             <field name="arch" type="xml">
@@ -29,12 +29,12 @@
         </record>
 
         <!--        Action View-->
-        <record id="action_view_1" model="ir.actions.act_window">
+        <record id="action_view_2" model="ir.actions.act_window">
             <field name="name">Questions and Answer Database</field>
-            <field name="type">ir.actions.act_window</field>
+<!--            <field name="type">ir.actions.act_window</field>-->
             <field name="res_model">question.info</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="tree_view_1"/>
+            <field name="view_id" ref="tree_view_2"/>
         </record>
     </data>
 </odoo>

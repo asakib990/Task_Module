@@ -1,1 +1,1 @@
-from . import student_info, question
+from . import database

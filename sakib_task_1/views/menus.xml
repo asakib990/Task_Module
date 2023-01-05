@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <data>
         <menuitem
-            id = "menu_item_parent"
-            name = "Home Menu"
+            id = "parent_menu"
+            name = "Home"
         />
         <menuitem
-            id = "menu_item_child_1"
+            id = "sub_menu_1"
             name = "Student Information"
-            parent = "menu_item_parent"
-            action = "action_view_2"
+            parent = "parent_menu"
+            action = "action_view_1"
         />
         <menuitem
-            id = "menu_item_child_2"
-            name = "Exam Information"
-            parent = "menu_item_parent"
-            action = "action_view_1"
+            id = "sub_menu_2"
+            name = "Question Information"
+            parent = "parent_menu"
+            action = "action_view_2"
         />
     </data>
 </odoo>

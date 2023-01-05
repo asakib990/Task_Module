@@ -33,15 +33,10 @@
             <field name="model">question.info</field>
             <field name="arch" type="xml">
                 <form string="Questions and Answer">
-
-                    <field name="que_id"/>
-                    <field name="que"/>
-
-
-                    <field name="ans"/>
-                    <field name="marks"/>
-
-
+                        <field name="que_id"/>
+                        <field name="que"/>
+                        <field name="ans"/>
+                        <field name="marks"/>
                 </form>
             </field>
         </record>
